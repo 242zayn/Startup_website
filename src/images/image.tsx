@@ -13,6 +13,12 @@ import GitHubIcon from "../../public/github.png";
 import LarabelIcon from "../../public/laravel.png";
 import Elementer from "../../public/elementer.png";
 import MapImage from "../../public/maps.png";
+import StartIcon from "../../public/start.png";
+import ceo1 from "../../public/ceo1.png";
+import PlayIcon from "../../public/playerIcon.png";
+import MegentaCircle from "../../public/megentaCircle.png";
+import Person3 from "../../public/person3.png";
+import SubCutCircle from "../../public/SubsCutCircle.png";
 
 export {
   clintimg1,
@@ -30,4 +36,10 @@ export {
   LarabelIcon,
   Elementer,
   MapImage,
+  StartIcon,
+  ceo1,
+  PlayIcon,
+  MegentaCircle,
+  Person3,
+  SubCutCircle
 };

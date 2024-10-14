@@ -8,7 +8,14 @@ import SkyLineCard from "./SkyLineCard";
 import { PriceCardData, SkyLineData } from "@/data/data";
 import RightIcon from "@/images/RightIcon";
 import PricingCard from "./PricingCard";
-import { MapImage } from "@/images/image";
+import {
+  ceo1,
+  MapImage,
+  MegentaCircle,
+  Person3,
+  PlayIcon,
+  StartIcon,
+} from "@/images/image";
 const TurestedData = [
   "/client_2.png",
   "/client_4.png",
@@ -214,9 +221,157 @@ const Home = () => {
       </div>
 
       {/* Customer Section */}
-      <div className="max-w-[90%] bg-red-600 m-auto py-[50px]  ">
-        <h4 className="uppercase text-blue w-full "> Testimonials</h4>
+      <div className="w-[90%] m-auto py-[50px]  ">
+        <h4 className="uppercase text-blue w-full   "> Testimonials</h4>
+        <div className="flex justify-between items-center">
+          <h3 className=" w-1/4 text-5xl  font-Radley py-6 font-medium ">
+            What Customers Say About Us
+          </h3>
+          <ButtonTheem
+            content="View More"
+            bg_color="bg-megentabold"
+            border=""
+            border_color=""
+          />
+        </div>
+        <div className="flex flex-wrap gap-3 pt-[100px]  ">
+          <div className=" w-[32%] bg-[url('/custumer1.png')] h-[270px] relative  ">
+            <Image
+              src={PlayIcon}
+              alt=""
+              height={80}
+              width={80}
+              className=" top-[40%] right-[40%] absolute"
+            />
+          </div>
+          <div className=" w-[33%] bg-[#1F1D2C] py-12 px-6">
+            <div className="flex items-center gap-1 ">
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+            </div>
+            <p className="text-neutral-500 max-w-lg  my-5 text-sm text-start relative z-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              consectetur adipiscing commodo euismod condimentum nunc.
+            </p>
+            <div className="flex items-center gap-3">
+              <Image src={ceo1} alt="" height={50} width={50} />
+              <div>
+                <h4 className=" font-Raleway font-bold ">Sarvesh Sharma</h4>
+                <p className=" font-light text-xs text-blue ">Company CEO</p>
+              </div>
+            </div>
+          </div>
+          <div className=" w-[33%] bg-[#1F1D2C] py-12 px-6 ">
+            <div className="flex items-center gap-1 ">
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+              <Image src={StartIcon} alt="" height={20} width={20} />
+            </div>
+            <p className="text-neutral-500 max-w-lg  my-5 text-sm text-start relative z-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              consectetur adipiscing commodo euismod condimentum nunc.
+            </p>
+            <div className="flex items-center gap-3">
+              <Image src={ceo1} alt="" height={50} width={50} />
+              <div>
+                <h4 className=" font-Raleway font-bold ">Sarvesh Sharma</h4>
+                <p className=" font-light text-xs text-blue ">Company CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* Lets Start */}
+      <div className="bg-[#1F1D2C]">
+        <div className="flex w-[90%] m-auto py-[50px]  ">
+          <div className=" w-1/2 py-[100px] ">
+            <h4 className="uppercase text-blue w-full "> GET STARTED</h4>
+            <h3 className=" w-[80%] text-5xl  font-Radley py-6 font-medium ">
+              Let&apos;s Start Here! New Space for World
+            </h3>
+            <p className="text-[#9B9B9B] max-w-lg  my-5 text-sm text-start relative z-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              consectetur adipiscing commodo euismod condimentum nunc.
+            </p>
+            <div className="flex py-5 gap-5 ">
+              <ButtonTheem
+                content="Get Started"
+                bg_color="bg-megentabold"
+                border=""
+                border_color=""
+              />
+              <ButtonTheem
+                content="Hosting Plans"
+                bg_color=" "
+                border="border"
+                border_color="border-white"
+              />
+            </div>
+          </div>
+          <div className="w-1/2 relative  ">
+            <div className=" w-[500px] h-[450px] ml-auto bg-[#181420] relative overflow-hidden py-[30px] px-4 ">
+              <Image
+                src={MegentaCircle}
+                alt=""
+                height={450}
+                width={450}
+                className=" absolute top-[25%] -right-[15%]   "
+              />
+
+              <div className="flex flex-col">
+                <h4 className=" text-megentalight text-lg ml-[100px] !m-0 flex  items-center">
+                  <RightIcon />{" "}
+                  <span className="text-sm">Unlimited BandWidth</span>
+                </h4>
+                <h4 className=" text-megentalight text-lg ml-[100px] !m-0 flex  items-center">
+                  <RightIcon />{" "}
+                  <span className="text-sm">Super Turbo Power</span>
+                </h4>
+                <h4 className=" text-megentalight text-lg ml-[100px] !m-0 flex  items-center">
+                  <RightIcon />{" "}
+                  <span className="text-sm">
+                    24*7 Full Support More Detials
+                  </span>
+                </h4>
+              </div>
+            </div>
+            <Image
+              src={Person3}
+              alt=""
+              height={450}
+              width={400}
+              className=" absolute -top-[4%] -right-[4%] z-20  "
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Subcribe Section */}
+      <div className="w-[90%] m-auto my-[100px] pt-[30px] pb-[80px] rounded-xl bg-megentalight text-center Subscribe overflow-hidden  ">
+        <h4 className="uppercase text-black w-full font-bold text-sm ">
+          {" "}
+          GET STARTED
+        </h4>
+        <h3 className=" w-[80%] m-auto text-center text-5xl  font-Radley py-6 font-medium ">
+          Subscribe to our Newsletter
+        </h3>
+        <div className="flex items-center gap-4 justify-center ">
+          <input className="bg-white outline-none w-1/2 h-[55px] text-black px-4 " />
+          <ButtonTheem
+            content="Subscribe"
+            bg_color="bg-black"
+            border=""
+            border_color=""
+          />
+        </div>
+      </div>
+      
     </div>
   );
 };
