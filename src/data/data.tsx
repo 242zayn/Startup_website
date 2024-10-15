@@ -6,6 +6,12 @@ import {
   DCardimg5,
   DCardimg6,
   GitHubIcon,
+  xicon,
+  linkedicon,
+  Fbicon,
+  insaicon,
+  youtubeicon,
+  tweetIcon,
 } from "@/images/image";
 import { DCardType, PricingCardType, SkyLineType } from "@/types/types";
 
@@ -103,4 +109,12 @@ export const PriceCardData: PricingCardType[] = [
       "Free domain included ",
     ],
   },
+];
+
+export const FooterSocialIconData = [
+  tweetIcon,
+  Fbicon,
+  linkedicon,
+  insaicon,
+  youtubeicon,
 ];

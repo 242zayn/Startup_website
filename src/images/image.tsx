@@ -19,6 +19,16 @@ import PlayIcon from "../../public/playerIcon.png";
 import MegentaCircle from "../../public/megentaCircle.png";
 import Person3 from "../../public/person3.png";
 import SubCutCircle from "../../public/SubsCutCircle.png";
+import xicon from "../../public/xicon.png";
+import Fbicon from "../../public/fbicon.png";
+import linkedicon from "../../public/linkdicon.png";
+import insaicon from "../../public/instagram.png";
+import youtubeicon from "../../public/youtube.png";
+import tweetIcon from "../../public/tweet.png";
+import locationIcon from "../../public/locationIcon.png";
+import messageIcion from "../../public/mesageIcon.png";
+import callIcon from "../../public/callIcon.png";
+import clockIcon from "../../public/clockIcon.png";
 
 export {
   clintimg1,
@@ -41,5 +51,15 @@ export {
   PlayIcon,
   MegentaCircle,
   Person3,
-  SubCutCircle
+  SubCutCircle,
+  xicon,
+  Fbicon,
+  linkedicon,
+  insaicon,
+  youtubeicon,
+  tweetIcon,
+  locationIcon,
+  messageIcion,
+  callIcon,
+  clockIcon,
 };

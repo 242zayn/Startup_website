@@ -5,13 +5,17 @@ import HomeIConSec from "./HomeIConSec";
 import ButtonTheem from "./ButtonTheem";
 import CardDiscover from "./CardDiscoverSic";
 import SkyLineCard from "./SkyLineCard";
-import { PriceCardData, SkyLineData } from "@/data/data";
+import { FooterSocialIconData, PriceCardData, SkyLineData } from "@/data/data";
 import RightIcon from "@/images/RightIcon";
 import PricingCard from "./PricingCard";
 import {
+  callIcon,
   ceo1,
+  clockIcon,
+  locationIcon,
   MapImage,
   MegentaCircle,
+  messageIcion,
   Person3,
   PlayIcon,
   StartIcon,
@@ -371,7 +375,92 @@ const Home = () => {
           />
         </div>
       </div>
-      
+
+      {/* Footer Section */}
+
+      <div className="flex w-[90%] m-auto py-[150px] ">
+        <div className=" w-1/2 ">
+          <h4 className=" text-2xl font-bold ">Host Beta</h4>
+          <p className="text-[#9B9B9B] max-w-lg  my-8 text-base text-start relative z-10">
+            Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nullam in
+            nibh vehicula.
+          </p>
+          <div className="flex items-center gap-4 py-3">
+            {FooterSocialIconData.map((value, index) => {
+              return (
+                <div
+                  key={index}
+                  className=" w-[50px] h-[50px] bg-white flex items-center justify-center rounded-full "
+                >
+                  <Image src={value} alt="" height={30} width={30} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="w-1/2 flex items-center justify-evenly gap-4 ">
+          <div>
+            <h4 className=" text-xl font-bold ">Get In Touch</h4>
+
+            <div className=" flex flex-col gap-5 py-8 ">
+              <div className="flex items-center gap-4">
+                <Image src={locationIcon} alt="" height={20} width={20} />{" "}
+                <p className=" text-sm">Richardson, California 62639</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image src={messageIcion} alt="" height={20} width={20} />{" "}
+                <p className=" text-sm">felicia.reid@example.com</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image src={callIcon} alt="" height={20} width={20} />{" "}
+                <p className=" text-sm">(405) 555-0128</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image src={clockIcon} alt="" height={20} width={20} />{" "}
+                <p className=" text-sm">December 19, 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 className=" text-xl font-bold ">Support</h4>
+
+            <div className=" flex flex-col gap-5 py-8 ">
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">Home</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">About</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">Team</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">Pricing</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 className=" text-xl font-bold ">Support</h4>
+
+            <div className=" flex flex-col gap-5 py-8 ">
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">Help Center</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">Career</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">FAQ&apos;S</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <p className=" text-sm">Privacy Policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
