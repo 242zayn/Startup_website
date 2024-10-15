@@ -6,7 +6,6 @@ import {
   DCardimg5,
   DCardimg6,
   GitHubIcon,
-  xicon,
   linkedicon,
   Fbicon,
   insaicon,

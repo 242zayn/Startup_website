@@ -11,7 +11,7 @@ const ButtonTheem = ({
   return (
     <div>
       <Link
-        className={` ${border} ${bg_color} ${border_color} text-white px-6 py-5 `}
+        className={`${border} ${bg_color} ${border_color} text-white px-6 py-5 `}
         href="#"
       >
         {content}

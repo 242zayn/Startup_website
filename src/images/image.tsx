@@ -19,7 +19,6 @@ import PlayIcon from "../../public/playerIcon.png";
 import MegentaCircle from "../../public/megentaCircle.png";
 import Person3 from "../../public/person3.png";
 import SubCutCircle from "../../public/SubsCutCircle.png";
-import xicon from "../../public/xicon.png";
 import Fbicon from "../../public/fbicon.png";
 import linkedicon from "../../public/linkdicon.png";
 import insaicon from "../../public/instagram.png";
@@ -52,7 +51,6 @@ export {
   MegentaCircle,
   Person3,
   SubCutCircle,
-  xicon,
   Fbicon,
   linkedicon,
   insaicon,
