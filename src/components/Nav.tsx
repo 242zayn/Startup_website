@@ -9,9 +9,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
 } from "@nextui-org/react";
-import { BackgroundBeams } from "./ui/background-beams";
 import ButtonTheem from "./ButtonTheem";
 
 export default function Nav() {
